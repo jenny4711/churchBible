@@ -1,0 +1,35 @@
+body{
+  background-color: #51424E;
+}
+
+.Home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #51424E;
+ 
+}
+
+
+.Home_box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+border-radius: 20px;
+  background-color: #FBF4D7;
+  width:200px;
+  height:200px;
+  padding:50px 50px 50px 50px;
+ margin-top:190px;
+
+}
+.Home_box a{
+  color:#51424E;
+  text-decoration-line: none;
+  font-weight:700;
+  font-size:25px;
+  padding:5px;
+
+}
