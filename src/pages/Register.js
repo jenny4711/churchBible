@@ -48,57 +48,57 @@ const Register = () => {
       )}
       <Form className='register-form' onSubmit={register}>
         <Form.Group className="mb-3">
-          <Form.Label>Email</Form.Label>
+          <Form.Label>이메일</Form.Label>
           <Form.Control
             type="email"
             name="email"
             className='Register-input'
-            placeholder="Enter email"
+            placeholder="이메일 을작성해주세요"
             onChange={handleChange}
             required
           />
         </Form.Group>
         <Form.Group className="mb-3">
-          <Form.Label>Name</Form.Label>
+          <Form.Label>이름</Form.Label>
           <Form.Control
           className='Register-input'
             type="text"
             name="name"
-            placeholder="Enter name"
+            placeholder="이름을 작성해주세요"
             onChange={handleChange}
             required
           />
         </Form.Group>
 
         <Form.Group className="mb-3">
-          <Form.Label>season</Form.Label>
+          <Form.Label>기수</Form.Label>
           <Form.Control
           className='Register-input'
             type="text"
             name="season"
-            placeholder="season"
+            placeholder="기수를 작성해주세요.(예:11기)"
             onChange={handleChange}
             required
           />
         </Form.Group>
         <Form.Group className="mb-3">
-          <Form.Label>Password</Form.Label>
+          <Form.Label>비밀번호</Form.Label>
           <Form.Control
           className='Register-input'
             type="password"
             name="password"
-            placeholder="Password"
+            placeholder="비밀번호"
             onChange={handleChange}
             required
           />
         </Form.Group>
         <Form.Group className="mb-3">
-          <Form.Label>Confirm Password</Form.Label>
+          <Form.Label>재확인 비밀번호</Form.Label>
           <Form.Control
           className='Register-input'
             type="password"
             name="confirmPassword"
-            placeholder="Confirm Password"
+            placeholder="재확인 비밀번호"
             onChange={handleChange}
             required
             isInvalid={passwordError}
