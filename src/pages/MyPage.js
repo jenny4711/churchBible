@@ -57,7 +57,7 @@ const MyPage = () => {
             </tbody>
            
            
-            <span onClick={()=>deletedQt(item._id)}>삭제</span>
+            <span className='deleteBtn' onClick={()=>deletedQt(item._id)}>삭제</span>
           </Table>
           
         ))

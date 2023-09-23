@@ -53,6 +53,9 @@ span{
 .none{
   display: none;
 }
+.deleteBtn{
+  border-left:1px solid #51424E;
+}
 
 @media only screen and (max-width:768px){
   .Mypage{
