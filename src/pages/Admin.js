@@ -22,7 +22,7 @@ const [put,setPut]=useState(false)
   const { adminQt } = useSelector((state) => state.qt);
   const [adminR,setAdminR]=useState(null)
   const [adminQ,setAdminQ]=useState(null)
-  const choiceSS=['11기','12기','13','14','15','16','17','18']
+  const choiceSS=['11기','12기','13기','14기','15기','16기','17기','18기']
 
 function handleChange(evt){
   evt.preventDefault()
