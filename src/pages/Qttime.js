@@ -69,7 +69,7 @@ const Qttime = () => {
            rows={10}
            cols={10} />
         </Form.Group>
-        <Button variant="danger" type="submit">
+        <Button className='Qttime-btn' variant="danger" type="submit">
           저장
         </Button>
         </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { Route, Routes } from "react-router";
 import { Link } from 'react-router-dom';
 import Login from './pages/Login';
@@ -10,6 +10,7 @@ import './CSS/App.css'
 import MyPage from './pages/MyPage';
 import { useDispatch, useSelector } from "react-redux";
 import { userActions } from './action/userAction';
+import { useNavigate } from "react-router";
 import Reading from './pages/Reading';
 import Admin from './pages/Admin';
 import AdminRegister from './pages/AdminRegister';
@@ -18,9 +19,18 @@ import AdminRegister from './pages/AdminRegister';
 function App() {
   const {user} = useSelector(state=>state.user)
   const dispatch=useDispatch()
+  const navigate=useNavigate()
+
+useEffect(()=>{
+navigate('/')
+},[])
+
   function logout(){
 dispatch(userActions.logout())
   }
+
+
+
   return (
     <div className='App'>
       
