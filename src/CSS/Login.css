@@ -19,9 +19,10 @@ border-radius: 20px;
 
   
 }
-input{
+#formBasicEmail,#formBasicPassword{
   width:100%;
   height:20px;
+
   margin-top:10px;
   border-radius: 5px;
   padding:5px;
@@ -33,6 +34,7 @@ button{
   height:50px;
   margin-top:40px;
   margin-bottom:10px;
+  margin-right:90px;
   background-color:#51424E;
   color:#FBF4D7;
 
