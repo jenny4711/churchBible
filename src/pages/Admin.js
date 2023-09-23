@@ -87,7 +87,7 @@ setAdminR(takeSeasonR)
         }
        
         </select>
-        <button>선택</button>
+        <button className='Admin-btn'>선택</button>
       </form>
       <br/>
       <br/>
