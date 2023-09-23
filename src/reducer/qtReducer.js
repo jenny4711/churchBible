@@ -1,8 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
 const initialState={
-  qt:{},
+  qt:[],
   loading:false,
-  error:""
+  error:"",
+  adminQt:[]
 };
 const qtSlice=createSlice({
   name:'qt',
@@ -26,6 +27,9 @@ const qtSlice=createSlice({
     deleteSuccess(state,action){
       state.loading=false;
     
+    },
+    adminShowAllSuccess(state,action){
+      state.adminQt=action.payload
     }
 
   }

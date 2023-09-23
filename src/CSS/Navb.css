@@ -1,0 +1,13 @@
+.Navb{
+  display:flex;
+  flex-direction: row;
+}
+.Navb a{
+  color:white;
+  text-decoration-line: none;
+
+}
+.bg-body-tertiary{
+  display:flex;
+  flex-direction: row;
+}

@@ -3,22 +3,21 @@ import { Container, Form, Button, Alert } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { userActions } from "../action/userAction";
-import '../CSS/Login.css'
+import "../CSS/Login.css";
 
 const Login = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const { user } = useSelector((state) => state.user);
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const error = useSelector((state) => state.user.error);
 
-  function loginWithEmail(evt){
+  function loginWithEmail(evt) {
     evt.preventDefault();
-    dispatch(userActions.loginWithEmail({email,password}))
-    navigate('/')
+    dispatch(userActions.loginWithEmail({ email, password }));
+    navigate("/");
   }
-
 
   return (
     <>
@@ -48,20 +47,17 @@ const Login = () => {
               onChange={(event) => setPassword(event.target.value)}
             />
           </Form.Group>
-          
-            <Button variant="danger" type="submit">
-              Login
-            </Button>
-            <div className='register'>
-              <Link to='/register'>Register</Link>
-            </div>
-         
 
-          
+          <Button variant="danger" type="submit">
+            Login
+          </Button>
+          <div className="register">
+            <Link to="/register">Register</Link>
+          </div>
         </Form>
       </Container>
     </>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;

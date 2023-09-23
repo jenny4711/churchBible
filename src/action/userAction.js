@@ -45,10 +45,20 @@ const registerUser =
   }
 
 }
+const adminShowAll=()=>async (dispatch)=>{
+  try{
+    const res = await api.get('/user/adminR')
+    console.log(res,'userAdmin!!!!!!!')
+
+  }catch(error){
+    dispatch(userActionss.registerUserFail(error.error))
+  }
+}
 
 export const userActions = {
   loginWithToken,
   loginWithEmail,
   logout,
   registerUser,
+  adminShowAll,
 };

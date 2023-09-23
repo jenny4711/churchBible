@@ -3,6 +3,7 @@ const initialState ={
   user:{},
   loading:false,
   error:"",
+ 
 };
 
 const userSlice=createSlice({
@@ -49,6 +50,7 @@ const userSlice=createSlice({
       state.error=action.payload;
 
     },
+    
     logout(){
       return{
         user:null,

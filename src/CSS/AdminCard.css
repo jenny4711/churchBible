@@ -1,0 +1,54 @@
+body{
+  display:flex;
+ justify-content: center;
+ align-items: center;
+
+
+}
+h2{
+  color:#51424E
+}
+.AdminCard{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FBF4D7;
+  padding:50px;
+  border-radius: 10px;
+  margin-bottom:10px;
+}
+.MyAdmin-tbody{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+ 
+   margin-bottom:20px;
+   border:1px solid #51424E;
+   width:500px;
+}
+.name{
+  width:40px;
+  border-right:1px solid #51424E;
+  border-bottom:1px solid #51424E;
+  color:#51424E;
+}
+.content{
+  width:550px;
+  padding:10px;
+  border-bottom:1px solid #51424E;
+  border-right:1px solid #51424E;
+  color:#51424E;
+  
+}
+.textArea{
+  border-right:1px solid #51424E;
+  padding:20px;
+  color:#51424E;
+}
+.reading{
+  margin-top:30px;
+}
+.none{
+  display: none;
+}

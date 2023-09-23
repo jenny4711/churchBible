@@ -28,6 +28,7 @@ const Register = () => {
     }
     setPasswordError("")
     dispatch(userActions.registerUser({email,name,level,confirmPassword,password,season},navigate));
+    navigate('/login')
   }
 
   function handleChange(evt){
@@ -72,7 +73,7 @@ const Register = () => {
           <Form.Control
             type="text"
             name="season"
-            placeholder="Enter name"
+            placeholder="season"
             onChange={handleChange}
             required
           />

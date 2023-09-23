@@ -17,7 +17,10 @@ const Home = () => {
       <div className='Home_box'>
         {isNormal?
         (
+          <>
         <Link to='/qt'>QtTime</Link>
+        <Link to='/mypage'>Mypage</Link>
+        </>
         ):(
           <>
         <Link to='/login'>Login</Link>
