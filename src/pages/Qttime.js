@@ -40,6 +40,7 @@ const Qttime = () => {
           <Form.Control
             name="date"
             type="date"
+            className='input'
             placeholder="날짜"
             onChange={handleChange}
           />
@@ -50,6 +51,7 @@ const Qttime = () => {
           <Form.Control
             name="main"
             type="text"
+            className='input'
             placeholder="본문 말씀"
             onChange={handleChange}
           />

@@ -52,3 +52,27 @@ button {
   text-decoration-line: none;
   font-weight: 700;
 }
+@media only screen and (max-width:768px){
+  .qt-form{
+    padding: 20px 40px 35px 50px;
+    width:65%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left:5px;
+  }
+  .input,.text_area{
+    width:100%;
+   
+    text-align: center;
+  }
+  .label-spacing {
+    text-align: center;
+    padding-right:50px;
+  }
+    .button{
+     
+margin-right:80px;
+     
+    }
+}
