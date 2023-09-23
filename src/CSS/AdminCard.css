@@ -52,3 +52,12 @@ h2{
 .none{
   display: none;
 }
+@media only screen and (max-width:768px){
+  .Myadmin{
+    width:100%;
+   
+  }
+  .MyAdmin-tbody{
+width:250px;
+  }
+}
