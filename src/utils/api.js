@@ -3,7 +3,7 @@ const REACT_APP_LOCAL_BACKEND=process.env.REACT_APP_LOCAL_BACKEND;
 console.log('proxy',REACT_APP_LOCAL_BACKEND)
 
 const api = axios.create({
-  baseURL:REACT_APP_LOCAL_BACKEND,
+  baseURL:`${REACT_APP_LOCAL_BACKEND}/api`,
   headers:{
     "Content-Type":"application/json"
   },
