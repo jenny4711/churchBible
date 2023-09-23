@@ -66,7 +66,8 @@ const Qttime = () => {
            onChange={handleChange}
            as="textarea" 
            className='text_area'
-           rows={15} />
+           rows={10}
+           cols={10} />
         </Form.Group>
         <Button variant="danger" type="submit">
           저장
