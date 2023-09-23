@@ -53,6 +53,16 @@ span{
 .none{
   display: none;
 }
-@media only screen and(max-width:600px){
-  
+
+@media only screen and (max-width:768px){
+  .Mypage{
+    width:35%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left:30px;
+  }
+  .Mypage-tbody{
+    width:290px;
+  }
 }
