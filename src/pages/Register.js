@@ -52,6 +52,7 @@ const Register = () => {
           <Form.Control
             type="email"
             name="email"
+            className='Register-input'
             placeholder="Enter email"
             onChange={handleChange}
             required
@@ -60,6 +61,7 @@ const Register = () => {
         <Form.Group className="mb-3">
           <Form.Label>Name</Form.Label>
           <Form.Control
+          className='Register-input'
             type="text"
             name="name"
             placeholder="Enter name"
@@ -71,6 +73,7 @@ const Register = () => {
         <Form.Group className="mb-3">
           <Form.Label>season</Form.Label>
           <Form.Control
+          className='Register-input'
             type="text"
             name="season"
             placeholder="season"
@@ -81,6 +84,7 @@ const Register = () => {
         <Form.Group className="mb-3">
           <Form.Label>Password</Form.Label>
           <Form.Control
+          className='Register-input'
             type="password"
             name="password"
             placeholder="Password"
@@ -91,6 +95,7 @@ const Register = () => {
         <Form.Group className="mb-3">
           <Form.Label>Confirm Password</Form.Label>
           <Form.Control
+          className='Register-input'
             type="password"
             name="confirmPassword"
             placeholder="Confirm Password"
@@ -103,7 +108,7 @@ const Register = () => {
           </Form.Control.Feedback>
         </Form.Group>
         
-        <Button variant="danger" type="submit">
+        <Button className='Register-btn' variant="danger" type="submit">
           회원가입
         </Button>
         <div className='goHome'>
