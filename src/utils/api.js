@@ -1,9 +1,9 @@
 import axios from 'axios'
-const REACT_APP_LOCAL_BACKEND=process.env.REACT_APP_LOCAL_BACKEND;
-console.log('proxy',REACT_APP_LOCAL_BACKEND)
+const REACT_APP_BACKEND_PROXY=process.env.REACT_APP_BACKEND_PROXY;
+console.log('proxy',REACT_APP_BACKEND_PROXY)
 
 const api = axios.create({
-  baseURL:`${REACT_APP_LOCAL_BACKEND}/api`,
+  baseURL:`${REACT_APP_BACKEND_PROXY}/api`,
   headers:{
     "Content-Type":"application/json"
   },
