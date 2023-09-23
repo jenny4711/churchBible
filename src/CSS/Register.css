@@ -32,9 +32,10 @@ border-radius: 20px;
 }
 .Register-btn{
   width:80px;
-  height:50px;
-  margin-top:40px;
-  margin-bottom:10px;
+ padding:10px 10px 10px 10px;
+ margin: 40px 20px 10px 20px;
+
+  text-align: center;
   background-color:#51424E;
   color:#FBF4D7;
 
