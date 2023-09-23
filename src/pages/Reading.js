@@ -65,7 +65,7 @@ const Reading = () => {
            className='text_area'
            rows={15} />
         </Form.Group>
-        <Button variant="danger" type="submit">
+        <Button className='Reading-btn' variant="danger" type="submit">
           저장
         </Button>
         </div>
