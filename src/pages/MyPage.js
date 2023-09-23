@@ -43,21 +43,21 @@ const MyPage = () => {
            
             <tbody >
               <tr >
-                <td className='name' >date</td>
+                <td className='name border' >date</td>
                 <td className='content'>{item.date}</td>
               </tr>
               <tr>
-                <td className='name'>본문 구절</td>
+                <td className='name border'>본문 구절</td>
                 <td className='content'>{item.main}</td>
               </tr>
               <tr>
-                <td className='name'>본문 내용</td>
+                <td className='name  '>본문 내용</td>
                 <td className='textArea'>{item.meditContent}</td>
               </tr>
             </tbody>
            
            
-            <span className='deleteBtn' onClick={()=>deletedQt(item._id)}>삭제</span>
+            <span onClick={()=>deletedQt(item._id)}>삭제</span>
           </Table>
           
         ))
@@ -76,15 +76,15 @@ const MyPage = () => {
            
             <tbody >
               <tr >
-                <td className='name' >과제목</td>
+                <td className='name border' >과제목</td>
                 <td className='content'>{item.title}</td>
               </tr>
               <tr>
-                <td className='name'>주요내용</td>
+                <td className='name border'>주요내용</td>
                 <td className='content'>{item.main}</td>
               </tr>
               <tr>
-                <td className='name'>느낀점</td>
+                <td className='name '>느낀점</td>
                 <td className='textArea'>{item.feelingContent}</td>
               </tr>
             </tbody>
