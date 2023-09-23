@@ -18,7 +18,7 @@ const Home = () => {
         {isNormal?
         (
           <>
-        <Link to='/qt'>새명의삶</Link>
+        <Link to='/qt'>생명의삶</Link>
         <Link to='/reading'>제자도</Link>
         <Link to='/mypage'>나의페이지</Link>
         </>
