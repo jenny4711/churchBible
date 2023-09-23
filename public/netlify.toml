@@ -1,4 +1,4 @@
 [[redirects]]
   from = "/api/*"
-  to = "http://bible-study.us-east-1.elasticbeanstalk.com:splat"
+  to = "http://bible-study.us-east-1.elasticbeanstalk.com/api:splat"
   status = 200
