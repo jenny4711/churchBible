@@ -10,11 +10,11 @@ const AdminCard = ({item}) => {
            
            <tbody >
              <tr >
-               <td className='name' >과제목</td>
+               <td className='name border' >과제목</td>
                <td className='content'>{item.title}</td>
              </tr>
              <tr>
-               <td className='name'>주요내용</td>
+               <td className='name border'>주요내용</td>
                <td className='content'>{item.main}</td>
              </tr>
              <tr>
