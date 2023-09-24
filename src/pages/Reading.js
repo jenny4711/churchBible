@@ -37,6 +37,7 @@ const Reading = () => {
           <Form.Control
             name="title"
             type="text"
+            className='input'
             placeholder="과제목"
             onChange={handleChange}
           />
@@ -48,6 +49,7 @@ const Reading = () => {
           <Form.Control
            name="main" 
            type='text'
+     
            onChange={handleChange}
            as="textarea" 
            className='text_area'

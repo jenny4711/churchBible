@@ -52,3 +52,34 @@ textarea {
   text-decoration-line: none;
   font-weight: 700;
 }
+@media only screen and (max-width:768px){
+  .qt-form{
+    padding: 20px 40px 35px 50px;
+    width:70%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+  }
+  .input,.text_area{
+    width:100%;
+   
+    text-align: center;
+  }
+  .date-input{
+    text-align: center;
+    width:100%;
+  }
+  .label-spacing {
+    text-align: center;
+    width:100%;
+    padding-right:40px;
+  }
+    .button{
+      text-align: center;
+      /* margin-right:100px; */
+  
+     
+    }
+
+}
