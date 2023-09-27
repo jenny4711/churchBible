@@ -40,7 +40,7 @@ dispatch(userActions.logout())
         {user && user.level === "normal" ?(
           <>
         <Link to='/mypage'>나의 페이지</Link>
-        <Link to='/qt'>생명의 삶</Link>
+        <Link to='/qt'>생명의 삶(QT)</Link>
         <Link to='/reading'>제자도</Link>
         <Link onClick={logout}>로그아웃</Link>
         </>

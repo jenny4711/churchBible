@@ -2,7 +2,7 @@ import React from 'react'
 import Table from 'react-bootstrap/Table';
 import '../CSS/AdminCard.css'
 const AdminCard = ({item}) => {
-  console.log(item,'!!!!!!!')
+
   return (
     <div className='AdminCard'>
       <h2>{item.userId.name}</h2>
