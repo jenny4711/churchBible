@@ -56,6 +56,17 @@ span{
 .border{
   border-bottom:1px solid #51424E;
 }
+.btnGroups{
+  display:flex;
+  flex-direction: row;
+}
+.MyPage-btn{
+  background-color: #51424E;
+  color: #FBF4D7;
+  padding:10px;
+  margin:10px;
+}
+
 @media only screen and (max-width:768px){
   .Mypage{
     width:35%;

@@ -13,6 +13,13 @@ const MyPage = () => {
   const {reading}=useSelector(state =>state.reading);
   const [openQ,setOpenQ]=useState(true);
   const [openR,setOpenR]=useState(true);
+
+  const [currentPageQt, setCurrentPageQt] = useState(0);
+
+  const itemsPerPage = 5;
+
+  const paginatedQt = qt?.data?.slice(currentPageQt * itemsPerPage, (currentPageQt + 1) * itemsPerPage) || [];
+
   
   function deletedQt (id){
     console.log(id)
@@ -37,8 +44,8 @@ const MyPage = () => {
     <>
       <h3 onClick={() => setOpenQ(!openQ)}>큐티</h3>
     <div className={openQ?'Mypage':'none'} >
-      {qt?.data ? (
-        qt.data.map((item) => (
+      {paginatedQt.length ? (
+        paginatedQt.map((item) => (
           <Table className='Mypage-tbody' key={item._id} responsive>
            
             <tbody >
@@ -64,6 +71,15 @@ const MyPage = () => {
       ) : (
         <p>작성하신 QT 가 없습니다.</p>
       )}
+
+<div className='btnGroups'>
+       <button className='MyPage-btn' disabled={currentPageQt === 0} onClick={() => setCurrentPageQt(currentPageQt - 1)}>
+          이전
+        </button>
+        <button className='MyPage-btn' disabled={(currentPageQt + 1) * itemsPerPage >= qt?.data?.length} onClick={() => setCurrentPageQt(currentPageQt + 1)}>
+          다음
+        </button>
+        </div>
 
       
       
