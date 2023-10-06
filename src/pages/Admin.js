@@ -87,7 +87,7 @@ setAdminR(takeSeasonR)
         }
        
         </select>
-        <button className='Admin-btn'>선택</button>
+        <button className='.Admin-btn'>선택</button>
       </form>
       <br/>
       <br/>
@@ -110,11 +110,15 @@ setAdminR(takeSeasonR)
       <h2 onClick={() => setOpenQ(!openQ)} className="title">
         큐티
       </h2>
-      <div>
+      <div className='QtSec'>
+        <div className={openQ?'QtLists':""}>
         {uniqueDate &&
           uniqueDate?.map((item) => (
+            
             <h3 onClick={() => findByDate(item)}>{item}</h3>
+           
           ))}
+          </div>
         <div className={!openQ ? "none" : ""}>
           {saveQt && saveQt?.map((item) => <AdminCardQt item={item} />)}
         </div>

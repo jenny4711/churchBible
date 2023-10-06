@@ -20,3 +20,12 @@
   margin: 0;
   padding: 0;
 }
+.QtSec{
+  display:flex;
+  align-items: flex-start;
+  justify-content: center;
+
+}
+.QtLists{
+  margin-right:20px;
+}
