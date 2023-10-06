@@ -18,7 +18,7 @@ body{
  display:flex;
  justify-content: center;
  align-items: center;
-
+line-height:1.5em;
   margin-bottom:20px;
   border:1px solid #51424E;
   width:500px;
