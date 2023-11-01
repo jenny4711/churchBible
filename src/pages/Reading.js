@@ -1,5 +1,5 @@
 import React from "react";
-import {Form,Container,Button} from "react-bootstrap";
+import {Form,Container,Button,Alert} from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router";
 import { readingActions } from '../action/ReadingAction';
@@ -24,7 +24,7 @@ const Reading = () => {
     evt.preventDefault();
     const {title,main,feelingContent}= formData; 
     dispatch(readingActions.addReading({title,main,feelingContent},navigate)); 
-    
+    <Alert key="primary" variant='primary'>Saved</Alert>
   }
 
 
