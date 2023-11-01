@@ -24,7 +24,7 @@ const Reading = () => {
     evt.preventDefault();
     const {title,main,feelingContent}= formData; 
     dispatch(readingActions.addReading({title,main,feelingContent},navigate)); 
-    <Alert key="primary" variant='primary'>Saved</Alert>
+   
   }
 
 

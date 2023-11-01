@@ -24,7 +24,7 @@ const Qttime = () => {
     evt.preventDefault();
     const { date, main, meditContent } = formData; 
     dispatch(qtActions.addQt({ date, main, meditContent },navigate)); 
-    <Alert key="primary" variant='primary'>Saved</Alert>
+   
     
   }
   
