@@ -1,5 +1,5 @@
 import React from "react";
-import {Form,Container,Button} from "react-bootstrap";
+import {Form,Container,Button,Alert} from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router";
 import { qtActions } from "../action/QtAction";
@@ -24,6 +24,7 @@ const Qttime = () => {
     evt.preventDefault();
     const { date, main, meditContent } = formData; 
     dispatch(qtActions.addQt({ date, main, meditContent },navigate)); 
+    <Alert key="primary" variant='primary'>Saved</Alert>
     
   }
   
